@@ -19,6 +19,6 @@ for line in lines:
 decoded = ""
 
 for di in index_counts:
-	decoded = decoded + sorted(di.items(),key=lambda t: t[1], reverse=True)[0][0]
+	decoded = decoded + sorted(di.items(),key=lambda t: t[1], reverse=False)[0][0]
 
 print decoded
