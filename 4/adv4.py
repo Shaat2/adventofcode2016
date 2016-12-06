@@ -21,11 +21,7 @@ class Room(object):
 			else:
 				letterCounts[letter] += 1
 
-		return "".join(list(
-						zip(*sorted(
-								sorted(letterCounts.items(),key=lambda t: t[0]),
-								key=lambda t: t[1], reverse=True)[0:5]
-							)[0]))
+		return "".join(list(zip(*sorted(sorted(letterCounts.items(),key=lambda t: t[0]),key=lambda t: t[1], reverse=True)[0:5])[0]))
 
 
 	def decodeChar(self, char):
